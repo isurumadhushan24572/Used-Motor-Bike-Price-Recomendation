@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Scooty Bike Price Prediction</title>
+    <!-- Add Bootstrap CSS link (optional) -->
+    <!-- link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" -->
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Motor Scooty Bike Price Prediction</h1>
+        <form method="post" action="/predict">
+            <div class="form-group">
+                <label for="Model">Model:</label>
+                <select class="form-control" name="Model" id="modelSelect" required>
+                    <option value="" disabled selected>Select Model</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Hero">Hero</option>
+                </select>
+                <p id="selectedModelLabel"></p>
+            </div>
+
+            <div class="form-group">
+                <label for="Brand">Brand:</label>
+                <select class="form-control" name="Brand" id="brandSelect" required>
+                    <option value="" disabled selected>Select Brand</option>
+                    <option value="Dio">Dio</option>
+                    <option value="Pleasure">Pleasure</option>
+                </select>
+                <p id="selectedBrandLabel"></p>
+            </div>
+
+            <div class="form-group">
+                <label for="Mileage">Mileage:</label>
+                <input type="number" class="form-control" name="Mileage" required placeholder="KM Driven">
+            </div>
+
+            <div class="form-group">
+                <label for="Year">Year:</label>
+                <input type="number" class="form-control" name="Year" required placeholder="Manufactured Year">
+            </div>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction_text %}
+            <h2>{{ prediction_text }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
