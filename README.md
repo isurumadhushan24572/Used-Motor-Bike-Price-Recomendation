@@ -35,14 +35,18 @@ Many individuals are interested in the used Honda Dio motorbike market at some p
 2. * Ridge Regresion
 3. * Lasso Regresion
 
+## Contribution
+Isuru Madhushan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24572 &nbsp;&nbsp;&nbsp; mkimrohana@students.nsbm.ac.lk
+Ravindu Kavinda &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24490 &nbsp;&nbsp;&nbsp; mrkKarunathilaka@students.nsbm.ac.lk 
+
 ## Conclusion
 
 Our project provides a tool for predicting the market value of used Honda Dio bikes in Sri Lanka. This can help both buyers and sellers make informed decisions. By using machine learning techniques and building a user-friendly web interface, we aim to make the process of buying and selling used bikes more transparent and fair.
 
 ## Author
 * Your Name : ** Isruru Madhushan **
-* GitHub Profile()
-* LinkedIn()
+* GitHub Profile('https://github.com/isurumadhushan24572')
+* LinkedIn('https://www.linkedin.com/in/isuru-madhushan-096878273/')
 
 Acknowledgements
 Riyasewana for providing the data.
