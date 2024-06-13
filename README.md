@@ -27,7 +27,7 @@ Many individuals are interested in the used Honda Dio motorbike market at some p
 3. **Feature Engineering**: Selecting and encoding relevant features.
 4. **Model Training**: Using linear regression and Lasso regression models.
 5. **Model Evaluation**: Assessing the performance of the models using metrics such as MSE, RMSE, R^2, and MAPE.
-6. **Hyperparameter Tuning**: Optimizing the models for better accuracy.
+
 
 ## Used Models
 
