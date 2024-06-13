@@ -36,8 +36,8 @@ Many individuals are interested in the used Honda Dio motorbike market at some p
 3. * Lasso Regresion
 
 ## Contribution
-Isuru Madhushan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24572 &nbsp;&nbsp;&nbsp; mkimrohana@students.nsbm.ac.lk
-Ravindu Kavinda &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24490 &nbsp;&nbsp;&nbsp; mrkKarunathilaka@students.nsbm.ac.lk 
+* Isuru Madhushan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24572 &nbsp;&nbsp;&nbsp; mkimrohana@students.nsbm.ac.lk
+* Ravindu Kavinda &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24490 &nbsp;&nbsp;&nbsp; mrkKarunathilaka@students.nsbm.ac.lk 
 
 ## Conclusion
 
