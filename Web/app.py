@@ -10,9 +10,9 @@ with open('predictor.pickle', 'rb') as f:
     best_model = pickle.load(f)
 
 # Prepare the label encoder for the Province column
-provinces = ['Western', 'Southern', 'North Central', 'Central', 'North Western', 'Sabaragamuwa', 'Northern', 'Uva', 'Eastern']
+# provinces = ['Western', 'Southern', 'North Central', 'Central', 'North Western', 'Sabaragamuwa', 'Northern', 'Uva', 'Eastern']
 le = LabelEncoder()
-le.fit(provinces)
+# le.fit(provinces)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
