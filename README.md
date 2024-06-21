@@ -25,15 +25,17 @@ Many individuals are interested in the used Honda Dio motorbike market at some p
 1. **Data Collection**: Web scraping data from the Riyasewana website.
 2. **Data Preprocessing**: Cleaning and preparing the data for analysis.
 3. **Feature Engineering**: Selecting and encoding relevant features.
-4. **Model Training**: Using linear regression and Lasso regression models.
-5. **Model Evaluation**: Assessing the performance of the models using metrics such as MSE, RMSE, R^2, and MAPE.
+4. **Model Training**: Using regression models.
+5. **HyperParameter Tuning**: Using GridSearchCV
+6. **Model Evaluation**: Assessing the performance of the models using metrics such as MSE, RMSE, R^2, and MAPE.
 
 
 ## Used Models
 
 1. * Linear Regresion
-2. * Ridge Regresion
+2. * RandomForest Regresion
 3. * Lasso Regresion
+4. * DecisionTree Regression
 
 ## Contribution
 * Isuru Madhushan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24572 &nbsp;&nbsp;&nbsp; mkimrohana@students.nsbm.ac.lk
