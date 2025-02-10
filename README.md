@@ -52,7 +52,7 @@ Our project provides a tool for predicting the market value of used Honda Dio bi
 
 Acknowledgements
 Riyasewana for providing the data.
-The developers and maintainers of the libraries used in this project
+
 
 
 
