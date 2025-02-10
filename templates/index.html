@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Honda Dio Scooty Price Predictor</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">Honda Dio Scooty Price Predictor</div>
+        <form action="/" method="POST">
+            <div class="form">
+                <div class="inputfield">
+                    <label for="Mileage">Mileage(KM)</label>
+                    <input class="input" type="number" name="Mileage" required>
+                </div>
+                <div class="inputfield">
+                    <label for="published_year">Published Year</label>
+                    <input class="input" type="number" name="published_year" required>
+                </div>
+                <div class="inputfield">
+                    <label for="manufactured_year">Manufactured Year</label>
+                    <input class="input" type="number" name="manufactured_year" required>
+                </div>
+                <div class="inputfield">
+                    <label for="province">Province</label>
+                    <div class = "custom_select">
+                        <select name="province" id="province">
+                            <option value="" selected hidden>Select</option>
+                            <option value="Western">Western</option>
+                            <option value="Southern">Southern</option>
+                            <option value="North Central">North Central</option>
+                            <option value="Central">Central</option>
+                            <option value="North Western">North Western</option>
+                            <option value="Sabaragamuwa">Sabaragamuwa</option>
+                            <option value="Northern">Northern</option>
+                            <option value="Uva">Uva</option>
+                            <option value="Eastern">Eastern</option>
+                        </select>
+       
+                    </div>
+                </div>
+                
+                
+             
+    
+                <div class="inputfield">
+                    <input class="btn" type="submit" value="Precict Price">
+                </div>
+            </div>
+        </form>
+
+        <div class="result">
+            {% if pred_value != 0 %}
+            <p>Estimated Price : LKR {{pred_value}}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
