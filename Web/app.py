@@ -1,7 +1,6 @@
 from flask import Flask, request, render_template
-import pandas as pd
 import pickle
-from sklearn.preprocessing import LabelEncoder
+
 
 app = Flask(__name__)
 
@@ -9,10 +8,16 @@ app = Flask(__name__)
 with open('predictor.pickle', 'rb') as f:
     best_model = pickle.load(f)
 
-# Prepare the label encoder for the Province column
-# provinces = ['Western', 'Southern', 'North Central', 'Central', 'North Western', 'Sabaragamuwa', 'Northern', 'Uva', 'Eastern']
-le = LabelEncoder()
-# le.fit(provinces)
+province_list = ['Central','Eastern','North Central','North Western','Northern','Sabaragamuwa','Southern','Uva','Western']
+def province_encoding(provinces):
+            list_provice = []
+            for province in province_list:
+                if provinces == province:
+                    list_provice.append(1)
+                else:
+                    list_provice.append(0)
+
+            return list_provice
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
@@ -23,22 +28,14 @@ def home():
         manufactured_year = int(request.form['manufactured_year'])
         province = request.form['province']
 
-        new_data = {
-            'Mileage': [mileage],
-            'Published_Year': [published_year],
-            'Manufactured_Year': [manufactured_year],
-            'Province': [province]
-        }
+        p_list = province_encoding(province)
+        new_data = [mileage, published_year, manufactured_year]
+        new_data.extend(p_list)
 
-        new_df = pd.DataFrame(new_data)
-        new_df['Province_Encoded'] = le.transform(new_df['Province'])
-        feature_cols = ['Mileage', 'Published_Year', 'Manufactured_Year', 'Province_Encoded'] 
-        X_new = new_df[feature_cols]
-
-        y_pred_new1 = best_model.predict(X_new)
+        y_pred_new1 = best_model.predict([new_data])
         pred_value = y_pred_new1[0]
 
-    return render_template('index.html', pred_value=pred_value)
+    return render_template('index.html', pred_value = pred_value)
 
 if __name__ == '__main__':
     app.run(debug=True)
