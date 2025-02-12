@@ -17,8 +17,10 @@ Many individuals are interested in the used Honda Dio motorbike market at some p
   - Seaborn
   - Matplotlib
   - Scikit-learn
-  - Requests
+  - Flask
   - BeautifulSoup
+  - API
+  - Docker
 
 ## Project Overview
 
